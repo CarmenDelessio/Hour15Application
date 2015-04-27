@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Hour15Application</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="choices_array">
+        <item>Writing and Reading Shared Preferences</item>
+        <item>PreferencesFragment</item>
+        <item>Generated PreferencesActivity</item>
+    </string-array>
+    <string name="title_activity_read_write_preferences">ReadWritePreferences</string>
+
+    <string name="first_time_message">Thanks for trying this app</string>
+    <string name="return_user_message">Welcome back</string>
+
+
+    <string-array name="pie_array">
+        <item>apple</item>
+        <item>blueberry</item>
+        <item>cherry</item>
+        <item>coconut cream</item>
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

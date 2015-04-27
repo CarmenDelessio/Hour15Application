@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Images">
+        <CheckBoxPreference
+            android:key="hires"
+            android:title="Hi-Res Images"
+            android:summary="Show high quality images. These take longer to load"
+            android:defaultValue="False" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Pie Info">
+        <SwitchPreference
+            android:key="pie"
+            android:title="Pie"
+            android:summary="Like Pie"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:dependency="pie"
+            android:key="pie_type"
+            android:title="Pie Type"
+            android:summary="Preferred pie type for eating"
+            android:dialogTitle="Type of Pie"
+            android:entries="@array/pie_array"
+            android:entryValues="@array/pie_array"
+            android:defaultValue="apple" />
+
+        <EditTextPreference
+            android:key="more_info"
+            android:title="More Info"
+            android:summary="More about pies"
+            android:defaultValue="" />
+    </PreferenceCategory>
+    <PreferenceScreen
+        android:key="second_preferencescreen"
+        android:title="Second Screen of Settings">
+        <EditTextPreference
+            android:key="extraA"
+            android:title="More Data"
+            android:summary="Another EditTextPreference"
+            android:defaultValue="" />
+        <EditTextPreference
+            android:key="ExtraB"
+            android:title="Even More Info"
+            android:summary="What more can we say"
+            android:defaultValue="" />
+    </PreferenceScreen>
+</PreferenceScreen>
